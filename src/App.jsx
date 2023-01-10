@@ -10,8 +10,8 @@ export default class App extends React.Component{
         return(
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/winterschool" element={<WinterSchool/>}/>
+                    <Route path="/EconWebsite2022-23" element={<Home/>}/>
+                    <Route path="/EconWebsite2022-23/winterschool" element={<WinterSchool/>}/>
                 </Routes>
             </BrowserRouter>
         );
