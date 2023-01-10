@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EconWebsite2022-23/static/css/main.1e698324.css",
-    "main.js": "/EconWebsite2022-23/static/js/main.fab0f848.js",
+    "main.css": "/EconWebsite2022-23/static/css/main.dfb23f5d.css",
+    "main.js": "/EconWebsite2022-23/static/js/main.18cc8a24.js",
     "static/media/eco.png": "/EconWebsite2022-23/static/media/eco.c8ffc6dcb99ad56fa5c1.png",
     "static/media/logo.png": "/EconWebsite2022-23/static/media/logo.66e940475b98dcb80ccc.png",
     "static/media/background.png": "/EconWebsite2022-23/static/media/background.38289c7c17722c828184.png",
@@ -9,11 +9,11 @@
     "static/media/img-2.png": "/EconWebsite2022-23/static/media/img-2.2869b7a030d5c7477a87.png",
     "static/media/optiverlogo.png": "/EconWebsite2022-23/static/media/optiverlogo.4f072beebef7d71facb7.png",
     "index.html": "/EconWebsite2022-23/index.html",
-    "main.1e698324.css.map": "/EconWebsite2022-23/static/css/main.1e698324.css.map",
-    "main.fab0f848.js.map": "/EconWebsite2022-23/static/js/main.fab0f848.js.map"
+    "main.dfb23f5d.css.map": "/EconWebsite2022-23/static/css/main.dfb23f5d.css.map",
+    "main.18cc8a24.js.map": "/EconWebsite2022-23/static/js/main.18cc8a24.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e698324.css",
-    "static/js/main.fab0f848.js"
+    "static/css/main.dfb23f5d.css",
+    "static/js/main.18cc8a24.js"
   ]
 }
