@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+
+.main-heading {
+  font-size: 5rem;
+  margin-bottom: 7.2rem;
+  font-weight: 400;
+}
+
+.sub-heading {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.6rem;
+}
+.subtitles--1 {
+  margin-bottom: 1rem;
+}
+.subtitles--2 {
+  margin-bottom: 5rem;
+}
+.intro-image {
+  width: 54rem;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 13rem;
+}
+
+.main-container {
+  max-width: 130rem;
+  padding: 5rem;
+}
+
+.more-info {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.info-subtitles-inner {
+  font-size: 1.2rem;
+}
