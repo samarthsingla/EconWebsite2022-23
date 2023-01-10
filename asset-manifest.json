@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e698324.css",
+    "main.js": "/static/js/main.5d143b10.js",
+    "static/media/eco.png": "/static/media/eco.c8ffc6dcb99ad56fa5c1.png",
+    "static/media/logo.png": "/static/media/logo.66e940475b98dcb80ccc.png",
+    "static/media/background.png": "/static/media/background.38289c7c17722c828184.png",
+    "static/media/farmer.png": "/static/media/farmer.da8ab7997f91b39ada2d.png",
+    "static/media/img-2.png": "/static/media/img-2.2869b7a030d5c7477a87.png",
+    "static/media/optiverlogo.png": "/static/media/optiverlogo.4f072beebef7d71facb7.png",
+    "index.html": "/index.html",
+    "main.1e698324.css.map": "/static/css/main.1e698324.css.map",
+    "main.5d143b10.js.map": "/static/js/main.5d143b10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e698324.css",
+    "static/js/main.5d143b10.js"
+  ]
+}
