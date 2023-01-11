@@ -2,8 +2,8 @@
 @import 'bootstrap/variables';
 @import 'bootstrap/mixins';
 
-$font-primary: 'Poppins',Arial, sans-serif;
-$primary: #f1bc31;
+$font-primary: 'Montserrat',Arial, sans-serif;
+$primary: #de9029;
 
 body{
 	font-family: $font-primary;
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-section{
-	padding: 7em 0;
+	padding: 0 0;
 }
 
 .ftco-no-pt{
@@ -147,8 +147,8 @@ h1, h2, h3, h4, h5,
 				  left: 0;
 				  background-color: $primary;
 				  visibility: hidden;
-				  -webkit-transform: scaleX(0);
-				  transform: scaleX(0);
+				//   -webkit-transform: scaleX(0);
+				//   transform: scaleX(0);
 				  -webkit-transition: all 0.2s ease-in-out 0s;
 				  transition: all 0.2s ease-in-out 0s;
 				  z-index: -1;

@@ -1,7 +1,11 @@
 import React from "react";
 import "./style.css";
+import $ from "jquery";
 
+import logo from "media/eco.png";
 export default class Header extends React.Component {
+    menuItems = [{"Home":"/"}];
+
     render() {
         return (
             <section className="ftco-section">
@@ -59,10 +63,10 @@ export default class Header extends React.Component {
                     id="ftco-navbar"
                 >
                     <div className="container">
-                        <a className="navbar-brand" href="index.html">
-                            Papermag <span>Magazine</span>
+                        <a className="navbar-brand" href="/">
+                            <img src={logo} alt="web-image" width="auto" height={80} />
                         </a>
-                        <form action="#" className="searchform order-sm-start order-lg-last">
+                        {/* <form action="#" className="searchform order-sm-start order-lg-last">
                             <div className="form-group d-flex">
                                 <input
                                     type="text"
@@ -73,7 +77,7 @@ export default class Header extends React.Component {
                                     <span className="fa fa-search" />
                                 </button>
                             </div>
-                        </form>
+                        </form> */}
                         <button
                             className="navbar-toggler"
                             type="button"
@@ -87,12 +91,19 @@ export default class Header extends React.Component {
                         </button>
                         <div className="collapse navbar-collapse" id="ftco-nav">
                             <ul className="navbar-nav m-auto">
-                                <li className="nav-item active">
+                                <li className="nav-item">
                                     <a href="#" className="nav-link">
                                         Home
                                     </a>
                                 </li>
-                                <li className="nav-item dropdown">
+                                <li className="nav-item dropdown" 
+                                onMouseEnter={(e) => {
+                                    $(e.target).parent().find(".dropdown-menu").addClass("show")
+                                }}
+                                onMouseLeave={(e) => {
+                                    $(e.target).parent().find(".dropdown-menu").removeClass("show");
+                                }}
+                                >
                                     <a
                                         className="nav-link dropdown-toggle"
                                         href="#"
@@ -100,10 +111,12 @@ export default class Header extends React.Component {
                                         data-toggle="dropdown"
                                         aria-haspopup="true"
                                         aria-expanded="false"
+                                        // onMouseEnter={(e) => {console.log("Hover ON");}}
                                     >
                                         Page
                                     </a>
-                                    <div className="dropdown-menu" aria-labelledby="dropdown04">
+                                    <div className="dropdown-menu" aria-labelledby="dropdown04"
+                                    >
                                         <a className="dropdown-item" href="#">
                                             Page 1
                                         </a>
@@ -120,12 +133,12 @@ export default class Header extends React.Component {
                                 </li>
                                 <li className="nav-item">
                                     <a href="#" className="nav-link">
-                                        Catalog
+                                        About Us
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Blog
+                                    <a href="winterschool" className="nav-link">
+                                        Winter School
                                     </a>
                                 </li>
                                 <li className="nav-item">
@@ -142,4 +155,5 @@ export default class Header extends React.Component {
 
         );
     }
+    
 }
