@@ -3,7 +3,7 @@
 @import 'bootstrap/mixins';
 
 $font-primary: 'Montserrat',Arial, sans-serif;
-$primary: #de9029;
+$primary: #dca762;
 
 body{
 	font-family: $font-primary;
@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5,
 				font-size: 11px;
 				padding-top: 2rem;
 				padding-bottom: 2rem;
-				padding-left: 20px;
+				padding-left: 30px;
 				padding-right: 20px;
 				font-weight: 500;
 				color: lighten($black,30%);

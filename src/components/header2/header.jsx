@@ -81,11 +81,14 @@ export default class Header extends React.Component {
                         <button
                             className="navbar-toggler"
                             type="button"
-                            data-toggle="collapse"
-                            data-target="#ftco-nav"
-                            aria-controls="ftco-nav"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
+                            // data-toggle="collapse"
+                            // data-target="#ftco-nav"
+                            // aria-controls="ftco-nav"
+                            // aria-expanded="true"
+                            // aria-label="Toggle navigation"
+                            onClick={()=>{
+                                $("#ftco-nav").toggleClass("collapse");
+                            }}
                         >
                             <span className="fa fa-bars" /> Menu
                         </button>

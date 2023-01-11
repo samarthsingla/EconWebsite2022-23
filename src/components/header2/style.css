@@ -8939,7 +8939,7 @@ body {
 
 a {
   transition: 0.3s all ease;
-  color: #de9029;
+  color: #dca762;
 }
 a:hover, a:focus {
   text-decoration: none !important;
@@ -8956,7 +8956,7 @@ h1, h2, h3, h4, h5,
 }
 
 .bg-primary {
-  background: #de9029 !important;
+  background: #dca762 !important;
 }
 
 .ftco-section {
@@ -9003,8 +9003,8 @@ h1, h2, h3, h4, h5,
   color: #fff;
 }
 .social-media p a:hover {
-  background: #de9029;
-  border-color: #de9029;
+  background: #dca762;
+  border-color: #dca762;
 }
 .social-media p a:hover span {
   color: #fff;
@@ -9055,7 +9055,7 @@ h1, h2, h3, h4, h5,
   font-size: 11px;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-right: 20px;
   font-weight: 500;
   color: #4d4d4d;
@@ -9071,7 +9071,7 @@ h1, h2, h3, h4, h5,
   height: 100%;
   bottom: 0;
   left: 0;
-  background-color: #de9029;
+  background-color: #dca762;
   visibility: hidden;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
@@ -9082,7 +9082,7 @@ h1, h2, h3, h4, h5,
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
   visibility: visible;
-  background-color: #de9029;
+  background-color: #dca762;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -9115,7 +9115,7 @@ h1, h2, h3, h4, h5,
   color: #000;
 }
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:hover, .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:focus {
-  background: #de9029;
+  background: #dca762;
   color: #fff;
 }
 @media (max-width: 991.98px) {
@@ -9127,7 +9127,7 @@ h1, h2, h3, h4, h5,
 }
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
   color: #fff;
-  background: #de9029;
+  background: #dca762;
   border-radius: 0px;
 }
 @media (max-width: 767.98px) {
@@ -9139,7 +9139,7 @@ h1, h2, h3, h4, h5,
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
     color: #fff;
-    background: #de9029;
+    background: #dca762;
     border-radius: 4px;
   }
 }
@@ -9148,7 +9148,7 @@ h1, h2, h3, h4, h5,
 }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
   visibility: visible;
-  background-color: #de9029;
+  background-color: #dca762;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
