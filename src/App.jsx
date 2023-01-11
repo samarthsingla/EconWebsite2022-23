@@ -3,17 +3,17 @@ import Header from "./components/header/Header";
 import Hero from "./pages/homepage/hero/Hero";
 import Home from "./pages/homepage/Home";
 import WinterSchool from "./pages/winterschool/WinterSchool";
-import {HashRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 export default class App extends React.Component{
     render(){
         return(
-            <HashRouter>
+            <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/winterschool" element={<WinterSchool/>}/>
                 </Routes>
-            </HashRouter>
+            </BrowserRouter>
         );
     }
 }
