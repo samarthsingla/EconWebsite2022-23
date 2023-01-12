@@ -9,7 +9,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <section className="ftco-section">
-                <div className="wrap">
+                {/* <div className="wrap">
                     <div className="container">
                         <div className="row justify-content-between">
                             <div className="col">
@@ -57,7 +57,7 @@ export default class Header extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <nav
                     className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
                     id="ftco-navbar"
@@ -95,11 +95,13 @@ export default class Header extends React.Component {
                         <div className="collapse navbar-collapse" id="ftco-nav">
                             <ul className="navbar-nav m-auto">
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <a href="/" className="nav-link">
                                         Home
                                     </a>
                                 </li>
-                                <li className="nav-item dropdown" 
+
+                                {/* Dropdown */}
+                                {/* <li className="nav-item dropdown" 
                                 onMouseEnter={(e) => {
                                     $(e.target).parent().find(".dropdown-menu").addClass("show")
                                 }}
@@ -133,9 +135,10 @@ export default class Header extends React.Component {
                                             Page 4
                                         </a>
                                     </div>
-                                </li>
+                                </li> */}
+
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <a href="#about" className="nav-link">
                                         About Us
                                     </a>
                                 </li>
@@ -145,10 +148,50 @@ export default class Header extends React.Component {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
-                                        Contact
+                                    <a href="https://www.instagram.com/ecoclubiitd/" className="nav-link" target="_blank">
+                                    <span className="fa fa-instagram">
+                                        <i className="sr-only">Instagram</i>
+                                    </span>
+                                    Instagram
                                     </a>
                                 </li>
+
+{/*                         
+                            <li className="nav-item dropdown" 
+                                onMouseEnter={(e) => {
+                                    $(e.target).parent().find(".dropdown-menu").addClass("show")
+                                }}
+                                onMouseLeave={(e) => {
+                                    $(e.target).parent().find(".dropdown-menu").removeClass("show");
+                                }}
+                                >
+                                    <a
+                                        className="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="dropdown04"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                        // onMouseEnter={(e) => {console.log("Hover ON");}}
+                                    >
+                                        Social
+                                    </a>
+                                    <div className="dropdown-menu" aria-labelledby="dropdown04"
+                                    >
+                                        <a className="dropdown-item" href="#">
+                                            Page 1
+                                        </a>
+                                        <a className="dropdown-item" href="#">
+                                            Page 2
+                                        </a>
+                                        <a className="dropdown-item" href="#">
+                                            Page 3
+                                        </a>
+                                        <a className="dropdown-item" href="#">
+                                            Page 4
+                                        </a>
+                                    </div>
+                            </li> */}
                             </ul>
                         </div>
                     </div>

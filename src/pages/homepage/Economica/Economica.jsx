@@ -6,7 +6,7 @@ export default class Economica extends React.Component {
   render() {
     return (
       <div className="container">
-        <h1 className="display-4">ECONOMICA</h1>
+        <h1 className="display-5">Economica</h1>
         
         
         <div className="card mb-4">

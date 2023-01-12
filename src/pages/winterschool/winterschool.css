@@ -16,9 +16,9 @@ a {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 100vh;
+  min-height: 75vh;
   position: relative;
-  color: white;
+  color: black;
   background: #fdfdfe;
   text-align: center;
   padding: 0 2em;
@@ -82,6 +82,7 @@ a {
 .et-slide {
     position: relative;
     color: black;
+    min-height: 100vh;
   }
   .et-hero-tabs h1,
 .et-slide h1 {

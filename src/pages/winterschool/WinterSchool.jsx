@@ -86,12 +86,12 @@ export default class WinterSchool extends React.Component {
 	render() {
 		return (
 			<>
-			<Header/>
+				<Header />
 				<div className="hero-container">
 					{/* Hero */}
 					<div className="bg-el">
 						<section className="et-hero-tabs">
-							<img src={eco_logo} alt="Optiver" width={200} />
+							<img src={eco_logo} alt="Economics Club IIT Delhi" width={200} />
 							<h3>Presents</h3>
 							<h1>WINTER SCHOOL 2023</h1>
 							<h3>Sponsored by</h3>
@@ -114,15 +114,34 @@ export default class WinterSchool extends React.Component {
 					{/* Main */}
 					<main className="et-main">
 						<section className="et-slide" id={this.sectionIds[0]}>
-							<h1>About</h1>
-							<h3>About Winter School</h3>
+
+							<p className="display-5 pt-4 px-5">A one-stop solution
+								for resolving the
+								mysteries of
+								<mark>Quantitative Trading</mark>
+								</p>
+
+							<p className="lead px-2	 pt-2">
+								We wish to enable tech-driven students from India
+								with a high quantitative aptitude to pursue
+								successful careers in Quantitative Finance.
+
+								We aim to provide insights into the day-to-day life
+								in the field and how one can prepare for getting
+								highly coveted internships and new grad roles.
+							</p>
 						</section>
+
 						<section className="et-slide timeline" id={this.sectionIds[1]}>
 							<EventsTimeline></EventsTimeline>
 						</section>
+
 						<section className="et-slide" id={this.sectionIds[2]}>
-							<h1>Register</h1>
-							<h3>Link to register</h3>
+						<a href="https://unstop.com/workshop/quantitative-trading-winter-school-indian-institute-of-technology-iit-delhi-585723" target="_blank">
+							<p className="display-5 clickButton">Click Here</p>
+						</a>
+						<p className="h3 text-muted">To register for the 2-week immersive online program</p>
+
 						</section>
 
 					</main>

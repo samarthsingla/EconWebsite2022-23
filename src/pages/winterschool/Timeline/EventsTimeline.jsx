@@ -1,39 +1,36 @@
+import { data, map } from "jquery";
 import React, { Fragment } from "react";
 import { render } from "react-dom";
 import { Timeline, Event } from "react-timeline-scribble";
 
-
+class EventData{
+    constructor(day, title, description){
+        this.data = {'day':day, 'title':title, "description":description}
+    }
+}
 export default class EventsTimeline extends React.Component {
+
+    
+    week1 = [
+        new EventData("Monday", "Abstractify Day 1", "Case Study Prompt to be Released"),
+        new EventData("Tuesday","Keynote Session", "Financial Markets: The Backbone of Economy"),
+    ]
+    week2 = [
+        new EventData("Tuesday", "Lecture 3", "Tech and Trading: Past Present and Future"),
+    ]
+
+
     render() {
         return (
             <Fragment>
+                <p className="display-4">Week 1</p>
                 <Timeline>
-                    {this.Heading("Week 1", "Getting Started")}
-                    <Event interval={"2013 - 2014"}>
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
-                    </Event>
-                    <Event interval={"2015 – 2016"} title={"Lorem"} subtitle={"Ipsum"}>
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.
-                    </Event>
-                    {this.Heading("Week 2", "Trading Deep Dive")}
+                    {map(this.week1, this.RenderEvent)}
+                </Timeline>
 
-                    {this.Heading("Week 3", "Systems Deep Dive")}
-
-                    {this.Heading("Week 4", "Life as a Quant")}
-
-
+                <p className="display-4 mt-5">Week 2</p>
+                <Timeline>
+                    {map(this.week2, this.RenderEvent)}
                 </Timeline>
             </Fragment>
         );
@@ -42,14 +39,21 @@ export default class EventsTimeline extends React.Component {
     Heading(title, subtitle){
         return(
             <>
-            <h1>
-                {title}
-            </h1>
-            <h3 className="pb-5">
-                {subtitle}
-            </h3>
+                <h1>{title}</h1>
+                <h3 className="mb-4">{subtitle}</h3>
             </>
         )
+    }
+
+    RenderEvent(event){
+        data = event.data;
+        return(
+            <Event interval={data['day']} title={data['title']}>
+                {/* <h2 className="display-4">{data['title']}</h2>   */}
+               {data['description']}
+               <div style={{width:"75vw"}}></div>
+            </Event>
+        );
     }
 }
 

@@ -9110,6 +9110,9 @@ h1, h2, h3, h4, h5,
     padding-bottom: 10px;
   }
 }
+.ftco-navbar-light .navbar-nav > .nav-item {
+  padding-left: 10px;
+}
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
   font-size: 11px;
   padding-top: 2rem;
