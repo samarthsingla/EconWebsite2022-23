@@ -11,7 +11,7 @@ export default class Header extends React.Component{
 >
   <div className="container">
     {/* Replace this with your own logo */}
-    <a className="navbar-brand" href="#">
+    <a className="navbar-brand" href="/">
       <img src={logo} alt="web-image" width="auto" height={100} />
     </a>
     {/* Toggler/collapsibe Button for small screens */}
