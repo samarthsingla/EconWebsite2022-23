@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import $ from "jquery";
 
-import logo from "media/eco.png";
+import logo from "media/ecobg_removed.png";
 export default class Header extends React.Component {
     menuItems = [{"Home":"/"}];
 

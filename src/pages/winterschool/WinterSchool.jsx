@@ -1,11 +1,12 @@
 import React from "react";
 
 import $ from 'jquery';
-import optiver_logo from "./media/optiverlogo.png";
-import eco_logo from "media/eco.png";
 import "./winterschool.css";
 import EventsTimeline from "./Timeline/EventsTimeline";
 
+import optiver_logo from "./media/optiverlogo.png";
+import optiver_logo_2 from "./media/optiver_black.png";
+import eco_logo from "media/eco.png";
 class StickyNavigation {
 	constructor() {
 		this.currentId = null;
@@ -85,37 +86,40 @@ export default class WinterSchool extends React.Component{
         return(
             <div className="hero-container">
             {/* Hero */}
-            <section className="et-hero-tabs">
-                <img src={eco_logo} alt="Optiver" width={200}/>
-                <h3>Presents</h3>
-                <h1>WINTER SCHOOL 2023</h1>
-                <h3>Sponsored by</h3>
-                <img src={optiver_logo} alt="Optiver" width={200}/>
-                <div className="et-hero-tabs-container">
-                    <a className="et-hero-tab" href={"#" + this.sectionIds[0]}>
-                        About
-                    </a>
-                    <a className="et-hero-tab" href={"#" + this.sectionIds[1]}>
-                        Timeline
-                    </a>
-                    <a className="et-hero-tab" href={"#" + this.sectionIds[2]}>
-                        Register
-                    </a>
-                    <span className="et-hero-tab-slider" />
-                </div>
-            </section>
+			<div className="bg-el">
+				<section className="et-hero-tabs">
+					<img src={eco_logo} alt="Optiver" width={200}/>
+					<h3>Presents</h3>
+					<h1>WINTER SCHOOL 2023</h1>
+					<h3>Sponsored by</h3>
+					<img src={optiver_logo_2} alt="Optiver" width={200}/>
+					<div className="et-hero-tabs-container">
+						<a className="et-hero-tab" href={"#" + this.sectionIds[0]}>
+							About
+						</a>
+						<a className="et-hero-tab" href={"#" + this.sectionIds[1]}>
+							Timeline
+						</a>
+						<a className="et-hero-tab" href={"#" + this.sectionIds[2]}>
+							Register
+						</a>
+						<span className="et-hero-tab-slider" />
+					</div>
+				</section>
+			</div>
+
             {/* Main */}
             <main className="et-main">
                 <section className="et-slide" id={this.sectionIds[0]}>
                     <h1>About</h1>
-                    <h3>something about es6</h3>
+                    <h3>About Winter School</h3>
                 </section>
-                <section className="et-slide" id={this.sectionIds[1]}>
+                <section className="et-slide timeline" id={this.sectionIds[1]}>
                     <EventsTimeline></EventsTimeline>
                 </section>
                 <section className="et-slide" id={this.sectionIds[2]}>
                     <h1>Register</h1>
-                    <h3>something about react</h3>
+                    <h3>Link to register</h3>
                 </section>
 
             </main>

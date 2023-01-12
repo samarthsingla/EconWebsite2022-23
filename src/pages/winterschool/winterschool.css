@@ -13,11 +13,13 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   min-height: 100vh;
   position: relative;
   color: white;
-  background: #1e1e1e;
+  background: #fdfdfe;
   text-align: center;
   padding: 0 2em;
 }
@@ -76,17 +78,20 @@ a {
 }
 
 @media (min-width: 800px) {
+  .et-hero-tabs,
+.et-slide {
+    position: relative;
+    color: black;
+  }
   .et-hero-tabs h1,
-  .et-slide h1 {
+.et-slide h1 {
     font-size: 3rem;
   }
   .et-hero-tabs h3,
-  .et-slide h3 {
+.et-slide h3 {
     font-size: 1rem;
   }
   .et-hero-tab {
     font-size: 1rem;
   }
-}
-
-/*# sourceMappingURL=winterschool.css.map */
+}/*# sourceMappingURL=winterschool.css.map */

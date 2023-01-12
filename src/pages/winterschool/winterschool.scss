@@ -13,10 +13,11 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-height: 100vh;
+height: fit-content;
+min-height: 100vh;
 position: relative;
 color: white;
-background: #1e1e1e;
+background: #fdfdfe;
     text-align: center;
     padding: 0 2em;
 
@@ -76,14 +77,23 @@ transition: left 0.3s ease;
 @media (min-width: 800px) {
 .et-hero-tabs,
 .et-slide {
+position: relative;
 h1 {
     font-size: 3rem;
 }
 h3 {
     font-size: 1rem;
 }
+color: black;
 }
+
+
 .et-hero-tab {
     font-size: 1rem;
 }
 }
+
+.et-hero-tabs{
+    // background-image: url(./media/amsterdam.jpg);
+}
+
