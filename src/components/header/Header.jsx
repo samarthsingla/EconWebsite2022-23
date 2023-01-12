@@ -30,7 +30,7 @@ export default class Header extends React.Component{
     <div className="collapse navbar-collapse" id="myList">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item active">
-          <a href="https://economicsclubiitd.netlify.app/" className="nav-link active" style={{ color: "black" }}>
+          <a href="#" className="nav-link active" style={{ color: "black" }}>
             {" "}
             Home{" "}
           </a>
